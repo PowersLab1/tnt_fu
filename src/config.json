@@ -1,6 +1,6 @@
 {
   "taskVersion": "1.0.0",
-  "taskName": "tnt_v1",
+  "taskName": "tnt_fu",
   "debug": false,
   "awsLambda": {
     "saveTaskData": {
