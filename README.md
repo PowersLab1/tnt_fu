@@ -28,3 +28,27 @@
    - Updated version specifically for day 2 testing
    - Loads data from previous sessions
    - Similar functionality to tnt_protocol but streamlined for the main task
+  
+     ---
+
+     
+1. The script loads all JPG files from a specific version folder (V1-V4)
+2. Takes 3/4 of these images for use in the TNT task:
+   ```matlab
+   number_of_images = 3*n/4; % Take 3/4 of the images to be included in TNT
+   ```
+
+3. Divides these images equally into three groups:
+   - Group 1: "think" (pure think trials)
+   - Group 2: "no_think" (pure no think trials) 
+   - Group 3: "switch" (alternating between think and no_think)
+
+4. Each image appears in all 4 blocks (shown by the loop from 4:7 when assigning trial types)
+
+Therefore, if there are N total JPG files in the version folder:
+- Total images used in TNT = 3N/4
+- Total trials = (3N/4) × 4 blocks
+
+80 trials in-person. 
+
+The total number is calculated as: (Number of JPG files) × 0.75 × 4 blocks
